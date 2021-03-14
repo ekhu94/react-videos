@@ -6,7 +6,9 @@ const VideoList = ({ videos }) => {
         return <VideoItem key={vid.id.videoId} video={vid} />
     });
     return (
-        <div>{ renderedList }</div>
+        <div className="ui relaxed divided list">
+            { renderedList }
+        </div>
     );
 }
 
