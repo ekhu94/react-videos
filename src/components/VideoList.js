@@ -1,10 +1,12 @@
 import React from 'react';
+import VideoItem from './VideoItem';
 
-const VideoList = props => {
+const VideoList = ({ videos }) => {
+    const renderedList = videos.map(vid => {
+        return <VideoItem />
+    });
     return (
-        <div>
-            Videos: {props.videos.length}
-        </div>
+        <div>{ renderedList }</div>
     );
 }
 
